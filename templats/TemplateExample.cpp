@@ -1,3 +1,4 @@
+#include "TemplateExample.h"
 #include <iostream>
 using namespace std;
 
@@ -20,4 +21,6 @@ int main() {
     for(int i = 0; i < 5; i++) cout << a[i] << endl;
     Show(6, 9.3);
     Show("foo", 45);
+    cout << Abs(-10) << endl;
+    cout << Abs(-0.89) << endl;
 }
