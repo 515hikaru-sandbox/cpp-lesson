@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
-template<typename T>
-    T Abs(T a) {
-        return a < 0 ? -a: a;
+template <typename TYPE>
+    void fillArray(TYPE *array, size_t size, TYPE value) {
+        for(size_t i = 0; i < size; i++) {
+            array[i] = value;
+        }
     }
 
 int main() {
-    cout << Abs(-10) << endl;
-    cout << Abs(-0.11) << endl;
+    int a[5];
+    fillArray(a, 5, 1);
+    for(int i = 0; i < 5; i++) cout << a[i] << endl;
 }
