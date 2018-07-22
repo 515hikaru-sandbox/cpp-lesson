@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 template<typename T>
     T Abs(T a) {
@@ -6,6 +7,6 @@ template<typename T>
     }
 
 int main() {
-    std::cout << Abs(-10) << std::endl;
-    std::cout << Abs(-0.11) << std::endl;
+    cout << Abs(-10) << endl;
+    cout << Abs(-0.11) << endl;
 }
